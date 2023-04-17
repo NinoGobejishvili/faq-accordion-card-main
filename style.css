@@ -1,0 +1,179 @@
+/* mobile design */
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  background-repeat: no-repeat;
+  }
+
+.container{
+  height: 535px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+  background-color: white;
+  background-image: url(./images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  }
+  
+.text-box{
+  height: 355px;
+  width: 279px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }  
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 45px;
+  }   
+
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  } 
+  
+.woman-desktop{
+  display: none;
+  }  
+
+.box-desktop{
+  display: none;
+  }
+  
+.woman-mobile{
+  margin-top: -210px;
+  width: 70%;
+  }  
+
+h1{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #1E1F36;
+  margin-top: 90px;
+  }
+
+.question-box{
+  width: 280px;
+  height: 15px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  }
+
+.question{
+  height: 13px;
+  width: 256px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#4B4C5F;
+  margin-left: -3px;
+  }
+  
+.bold {
+  font-weight: 700;
+  color: #1E1F36;
+  }  
+
+.arrow{
+  height: 4px;
+  width: 8px;
+  transition: transform 0.3s ease-in-out;
+  }  
+
+.rotate {
+  transform: rotate(180deg);
+  }  
+  
+.answer{
+  display: none;
+  height: 36px;
+  width: 265px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #787887;
+  margin-top: 13px;
+  } 
+
+.show{
+  display: block;
+  } 
+ 
+  
+.line{
+  background-color: #E8E8EA;
+  height: 1px;
+  margin-top: 18px;
+  }  
+
+  
+/* desktop design */
+@media screen and (min-width: 960px){
+  
+  .container{
+    height: 509px;
+    width: 920px; 
+    flex-direction: row;
+    background-color: white;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -150px left -550px;
+    overflow: hidden;
+    }
+
+  .text-box{
+    align-items: baseline;
+    margin-right: 150px;
+    }
+
+  .desktop-images{
+    margin-right: 150px;
+    }  
+    
+  h1{
+    margin-top: 0px;
+    }  
+    
+  .woman-desktop{
+    display: inline;
+    width: 472px;
+    z-index: 0;
+    position: relative;
+    }  
+
+  .box-desktop{
+    display: block;
+    z-index: 1;
+    margin-left: -26px;
+    margin-top: 130px;
+    position: absolute;
+    }
+  
+  .woman-mobile{
+    display: none;
+    }    
+  
+  }
+
+
